@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revisión Segura de Motos</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f8fb;
+    color:#333;
+}
+
+header{
+    background:#0d47a1;
+    color:white;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1100px;
+    margin:auto;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    opacity:0.8;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(#1565c0,#1e88e5);
+    color:white;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    color:#1565c0;
+}
+
+.servicios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.galeria img{
+    width:100%;
+    border-radius:6px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    max-width:500px;
+}
+
+input, textarea{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0d47a1;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>RevisiónMotos</h2>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#sobre">Sobre mí</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#galeria">Galería</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+<h1>Evita estafas al comprar tu moto</h1>
+<p>Revisiones profesionales de motos de segunda mano antes de comprar.</p>
+</section>
+
+<section id="sobre">
+<h2>Sobre mí</h2>
+<p>
+Soy especialista en revisión de motos de segunda mano.  
+Mi objetivo es ayudarte a comprar con seguridad evitando fraudes, averías ocultas o motos en mal estado.
+</p>
+<p>
+Inspecciono mecánica, documentación y estado general antes de que realices la compra.
+</p>
+</section>
+
+<section id="servicios">
+<h2>Servicios</h2>
+
+<div class="servicios">
+
+<div class="card">
+<h3>Inspección completa</h3>
+<p>Revisión mecánica y visual para detectar problemas ocultos.</p>
+</div>
+
+<div class="card">
+<h3>Verificación de documentación</h3>
+<p>Comprobación de papeles, cargas y estado legal del vehículo.</p>
+</div>
+
+<div class="card">
+<h3>Acompañamiento a la compra</h3>
+<p>Te acompaño a ver la moto y te asesoro antes de pagar.</p>
+</div>
+
+<div class="card">
+<h3>Informe profesional</h3>
+<p>Recibe un informe claro con el estado real de la moto.</p>
+</div>
+
+</div>
+</section>
+
+<section id="galeria">
+<h2>Galería</h2>
+
+<div class="galeria">
+<img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6">
+<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9">
+<img src="https://images.unsplash.com/photo-1558980664-10e7170e6b3b">
+<img src="https://images.unsplash.com/photo-1542367597-8849eb950fd8">
+</div>
+
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+
+<form>
+<input type="text" placeholder="Tu nombre" required>
+<input type="email" placeholder="Tu email" required>
+<textarea rows="5" placeholder="Mensaje"></textarea>
+<button type="submit">Enviar mensaje</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 RevisiónMotos - Compra tu moto con seguridad</p>
+</footer>
+
+</body>
+</html>
